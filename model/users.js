@@ -3,7 +3,7 @@ import { hash, compare } from "bcrypt"
 class Users{
     fetchUsers(req, res){
         const qry = `
-        SELECT userID, firstName, lastName, emailAdd, ContactNo, userRole, userProfileImg
+        SELECT UserId, Name, Surname, Email, contact, UserRole
         FROM Users;
         `
         db.query(qry, (err, results)=>{
@@ -16,7 +16,7 @@ class Users{
     }
     fetchUser(req, res){
         const qry = `
-        SELECT userID, firstName, lastName, emailAdd, ContactNo, userRole, userProfileImg
+        SELECT UserID, Name, Surname, Email, contact, UserRole
         FROM Users
         WHERE userID = ?;
         `

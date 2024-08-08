@@ -10,7 +10,7 @@ const app = express()
 const port= +process.env.PORT || 4000
 
 app.use((req, res, next)=>{
-    res.header("Access-Control-Allow-Origin", "https://archub-61ccd.web.app");
+    res.header("Access-Control-Allow-Origin", "https://crimewatch-backend.onrender.com");
     res.header("Access-Control-Allow-Credentials", "true" );
     res.header("Access-Control-Allow-Methods", "*" ); //allows all the http methods
     res.header("Access-Control-Request-Methods", "*" ); //alllows request methods
@@ -26,11 +26,11 @@ app.use(
     }),
     cookieParser(),
     cors({
-        origin: "https://archub-61ccd.web.app",
+        origin: "https://crimewatch-backend.onrender.com",
         credentials: true
     })
 )
-app.get('^/$|/archub',(req, res)=>{
+app.get('^/$|/crimewatch',(req, res)=>{
     res.status(200).sendFile(path.join(__dirname, './static/index.html'))
 })
 app.use('/users', userRouter)
