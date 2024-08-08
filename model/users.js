@@ -12,6 +12,8 @@ class Users{
                 status: res.statusCode,
                 results
             })
+            console.log("nothing");
+            
         })
     }
     fetchUser(req, res){
