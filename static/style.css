@@ -1,0 +1,13 @@
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border: 3px solid black;
+    background: teal;
+}
+td{
+    border: 3px solid black;
+}

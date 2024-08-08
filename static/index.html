@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Routes</title>
+  </head>
+
+  <body>
+    <div class="main-div">
+      <table>
+        <div>
+          <h3>General Routing</h3>
+        </div>
+        <thead>
+          <th>Route</th>
+          <th>HTTP Method</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/</td>
+            <td>GET</td>
+            <td>Display the home Page</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <div>
+          <h3>Route Information for users</h3>
+        </div>
+        <thead>
+          <th>Routes</th>
+          <th>HTTP Method</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/users/</td>
+            <td>GET</td>
+            <td>Retrieve all users from the database</td>
+          </tr>
+          <tr>
+            <td>/users/:id</td>
+            <td>GET</td>
+            <td>Retrieve a specific user</td>
+          </tr>
+          <tr>
+            <td>/users/register</td>
+            <td>post</td>
+            <td>Register a new user</td>
+          </tr>
+          <tr>
+            <td>/users/update/:id</td>
+            <td>patch</td>
+            <td>Edit user information</td>
+          </tr>
+          <tr>
+            <td>/users/delete/:id</td>
+            <td>delete</td>
+            <td>Delete a specific user</td>
+          </tr>
+          <tr>
+            <td>/users/login</td>
+            <td>post</td>
+            <td>Allow user to log in</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <div>
+          <h3>Route Information for Products</h3>
+        </div>
+        <thead>
+          <th>Routes</th>
+          <th>HTTP Method</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/products/</td>
+            <td>get</td>
+            <td>Retrieve all products</td>
+          </tr>
+          <tr>
+            <td>/products/:id</td>
+            <td>get</td>
+            <td>Retrieve a specific product</td>
+          </tr>
+          <tr>
+            <td>/products/add</td>
+            <td>post</td>
+            <td>Add a new product</td>
+          </tr>
+          <tr>
+            <td>/products/update/:id</td>
+            <td>patch</td>
+            <td>Edit a specific product</td>
+          </tr>
+          <tr>
+            <td>/products/delete/:id</td>
+            <td>patch</td>
+            <td>delete a specific product</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <div>
+          <h3>Route Information for Cart</h3>
+        </div>
+        <thead>
+          <th>Routes</th>
+          <th>HTTP Method</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/cart/</td>
+            <td>get</td>
+            <td>Retrieve all products in cart</td>
+          </tr>
+          <tr>
+            <td>/cart/delete/:id</td>
+            <td>delete</td>
+            <td>Delete a specific product in cart</td>
+          </tr>
+          <tr>
+            <td>/cart/delete</td>
+            <td>delete</td>
+            <td>Clear the cart</td>
+          </tr>
+          <tr>
+            <td>/cart/add/</td>
+            <td>post</td>
+            <td>Add a product to the cart</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
