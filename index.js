@@ -11,6 +11,7 @@ const port= +process.env.PORT || 4000
 
 app.use((req, res, next)=>{
     res.header("Access-Control-Allow-Origin", "https://crimewatch-backend.onrender.com");
+    // res.header("Access-Control-Allow-Origin", "http://localhost:4000");
     res.header("Access-Control-Allow-Credentials", "true" );
     res.header("Access-Control-Allow-Methods", "*" ); //allows all the http methods
     res.header("Access-Control-Request-Methods", "*" ); //alllows request methods
@@ -27,6 +28,7 @@ app.use(
     cookieParser(),
     cors({
         origin: "https://crimewatch-backend.onrender.com",
+        // origin: "http://localhost:4000",
         credentials: true
     })
 )

@@ -1,7 +1,6 @@
 {
   "name": "archub",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -22,5 +21,6 @@
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
     "nodemon": "^3.1.0"
-  }
+  },
+  "description": ""
 }
